@@ -1,0 +1,30 @@
+import { StyleSheet } from 'react-native';
+export default StyleSheet.create({
+  todo:{
+    margin:15,
+    backgroundColor:'#6791ff',
+    alignItems:'center',
+    borderRadius:10,
+  },
+  todoCompleted:{
+    margin:15,
+    backgroundColor:'#485062',
+    alignItems:'center',
+    borderRadius:10,
+    textDecorationLine:'line-through'
+  },
+  todoTitle:{
+    fontSize:28,
+    padding:5,
+    fontWeight:'700',
+    margin:5
+  },
+  todoTitleComplete:{
+    fontSize:28,
+    padding:5,
+    fontWeight:'700',
+    margin:5,
+    backgroundColor:'#485062',
+    textDecorationLine:'line-through'
+  }
+})
