@@ -13,7 +13,7 @@ function App() {
   const saveTodo = (e) => {
     if (todoText.trim()) {
       const newTodo = {
-        id: Math.floor(Math.random() * 100),
+        id: Math.floor(Math.random() * 1000000),
         title: todoText,
         completed: false
       }
@@ -23,6 +23,7 @@ function App() {
     renderItem
     setText('')
   }
+  console.log(todo)
   const onchangeInput = (text) => {
     setText(text)
   }
@@ -31,7 +32,7 @@ function App() {
     <View style={styles.container}>
       <View style={styles.titleContainer}>
         <Text style={styles.title}>Yapılacaklar</Text>
-        <Text style={styles.title}>0</Text>
+        <Text style={styles.title}>{todo.length}</Text>
       </View>
       <FlatList
         data={todo}
